@@ -69,6 +69,7 @@ Horisontal break
         src="image2.png" 
         width="800" 
         height="500"
+        alt="unable to load image, go back to first page"
 >
 ```
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/b04fd4a7-0da3-4c39-92bb-f4bc02da73da)  
