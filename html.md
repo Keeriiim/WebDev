@@ -213,6 +213,8 @@ If you add a folder into the project, for example images to hold your image pict
 # Tables
 To go from inline to block we have to type add width=100%.  
 Width can be placed with % or pixels i.e 500.  
+th for header, td for data. header is bold, data is not
+Header has option to use the scope attribute to specify whether the header is for a row, column, or group of rows or columns.
 ```bash
 <body>
 <table border="1" width="100%">
