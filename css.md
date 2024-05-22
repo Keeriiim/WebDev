@@ -5,7 +5,8 @@
 Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS defines how elements should be displayed on screen, paper, or in other media
 
 # Style
-Backgroundcolor of the body
+
+## Backgroundcolor of the body
 ```bash
 <!DOCTYPE html>
 <html >
@@ -22,3 +23,80 @@ Backgroundcolor of the body
 </html>
 ```
 
+## Padding
+```bash
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Second Page</title>
+</head>
+<body>
+    <div style padding="20px; color: white; background-color: black;">
+    This text will be padded, have whit text and black background  
+    </div>
+</body>
+</html>
+```
+
+## Class 
+The <style> enables you to write custom css class edits that can be called for text.
+```bash
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Second Page</title>
+</head>
+<body>
+    <style>
+        .className {
+                        style padding="20px;
+                        color: white;
+                        background-color: black;
+                    }
+    </style>
+
+    <div class="className">
+
+    <!-- To add multiple classes, have speace between them. -->
+    <!-- div class="className uppercase class3 class4 etc.."-->
+    
+    This text will be padded, have whit text and black background  
+    </div>
+</body>
+</html>
+```
+
+## Id
+Id's are customable with css using the class <style> function. But id must be unique and one can be called only.
+id="id1 id2" is wrong!
+```bash
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Second Page</title>
+</head>
+<body>
+    <style>
+        .className {
+                        style padding="20px;
+                        color: white;
+                        background-color: black;
+                    }
+        #idName {
+                    boarder 15 px; solid red;
+                }
+    </style>
+
+    <div class="className">
+
+    <!-- To add multiple classes, have speace between them. -->
+    <!-- div class="className uppercase class3 class4 etc.."-->
+    
+    This text will be padded, have whit text and black background  
+    </div>
+    <div id="idName">
+        This will create a red boarder around my text
+    </div>
+</body>
+</html>
+```
