@@ -28,6 +28,8 @@ Parent is the outside, child is the inner
 ```
 
 ## Text formatting
+u is deprecated, new way is to add 
+<span style="text-decoration: underline;>" </span>
 ```bash
 <div>
     <p>
@@ -55,6 +57,19 @@ Bold,italic,underline are inline meaning they only affect the inclosed text.
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/5cf39779-5fc0-4e25-a444-14f7639e416c)  
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/972d0f30-25b7-405e-af20-b338a9e94582)  
 
+# Id
+```bash
+<div id="top">
+        <a href="bottom">
+        Press here to go to the bottom of the page
+        </a>
+</div>
+<div id="bottom">
+        <a href="top">
+        Press here to go to the top of the page
+        </a>
+</div>
+```
 
 ## Horisontal rule and line breaks
 Horisontal break
@@ -135,6 +150,17 @@ Adding a target forces the browser to open it in a new tab
 
 </div>
 ```
+## Favicon        
+Creates a tiny favicon on top of browser tab
+```bash
+<head>
+    <title>Document</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+```
+If the file is missing ->
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/2aeedcc1-ae1f-4b6a-8c63-3f260d4fd809)  
+
 
 ## Images
 href will enable linking if the user presses on the img
