@@ -1,4 +1,14 @@
-
+- [Info](#info)
+- [Syntax](#syntax)
+- [Block element vs inline](#Block-element-vs-inline)
+- [Lists](#lists)
+- [Linking](#linking)
+- [Id](#id)
+- [Pathing](#pathing)
+- [Tables](#tables)
+- [](#)
+- [](#)
+- 
 
 # Info
 - !Doctype tells the browser to render the page as a html 5 file.
@@ -56,20 +66,6 @@ Bold,italic,underline are inline meaning they only affect the inclosed text.
 
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/5cf39779-5fc0-4e25-a444-14f7639e416c)  
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/972d0f30-25b7-405e-af20-b338a9e94582)  
-
-# Id
-```bash
-<div id="top">
-        <a href="bottom">
-        Press here to go to the bottom of the page
-        </a>
-</div>
-<div id="bottom">
-        <a href="top">
-        Press here to go to the top of the page
-        </a>
-</div>
-```
 
 ## Horisontal rule and line breaks
 Horisontal break
@@ -182,6 +178,51 @@ href will enable linking if the user presses on the img
 ```
 
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/f8542893-9ff6-4cf0-b5c3-e05f43ed2705)  
+
+
+# Id
+```bash
+<div id="top">
+        <a href="bottom">
+        Press here to go to the bottom of the page
+        </a>
+</div>
+<div id="bottom">
+        <a href="top">
+        Press here to go to the top of the page
+        </a>
+</div>
+```
+
+
+# Pathing
+If you add a folder into the project, for example images to hold your image picture1
+```bash
+<link rel="icon" href="images/picture1.png type="image/png"     # Links
+
+<img src="images/picture2.png                                   # images
+```
+
+
+## Browse your folder outside folder
+```bash
+<a href="../home.html" target="_self">Back to Home</a>        # Up a folder to home.html
+
+```
+
+# Tables
+```bash
+<body>
+<table>
+        <tr>
+                <td>
+                </td>
+        </tr>
+
+
+</table>
+</body>
+```
 
 
 
