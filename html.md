@@ -6,7 +6,7 @@
 - [Id](#id)
 - [Pathing](#pathing)
 - [Tables](#tables)
-- [](#)
+- [Formatting](#formatting)
 - [](#)
 - 
 
@@ -231,7 +231,21 @@ Header has option to use the scope attribute to specify whether the header is fo
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/3779d62d-ea2f-480b-80a2-a8aa1431de4b)  
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/fe992581-b633-4dae-8d31-a1fead81e300)  
 
+# Formatting
+Formatting can be done in two ways.
+```bash
+<body>
+<table border="1" width="100%">
+        <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+        </tr>
 
+
+</table>
+</body>
+```
 
 
 
