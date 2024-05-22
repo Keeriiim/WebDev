@@ -211,18 +211,25 @@ If you add a folder into the project, for example images to hold your image pict
 ```
 
 # Tables
+To go from inline to block we have to type add width=100%.  
+Width can be placed with % or pixels i.e 500.  
 ```bash
 <body>
-<table>
+<table border="1" width="100%">
         <tr>
-                <td>
-                </td>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
         </tr>
 
 
 </table>
 </body>
 ```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/3779d62d-ea2f-480b-80a2-a8aa1431de4b)  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/fe992581-b633-4dae-8d31-a1fead81e300)  
+
+
 
 
 
