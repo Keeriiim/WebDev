@@ -233,19 +233,53 @@ Header has option to use the scope attribute to specify whether the header is fo
 
 # Formatting
 Formatting can be done in two ways.
+
+pre 
+- will monospace the letters, give them the same space inbetween chars
+- whitespace sensetive , space will show up
+- block element formatting
 ```bash
 <body>
-<table border="1" width="100%">
-        <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Age</th>
-        </tr>
-
-
-</table>
+<div>
+        <pre>
+            Let's try    this
+Oo  u  tttt
+        </pre>
+    </div>
 </body>
 ```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/fa6077f4-8161-4f55-8031-059e7ec8c17e)  
+
+
+code
+- will monospace the letters, give them the same space inbetween chars
+- Not whitespace sensetive
+- inline formatting
+
+```bash
+<body>
+<div>
+        <code>
+            Let's try    this
+O  u  tttt
+        </code>
+</div>
+</body>
+```
+
+<div>
+        <code>
+            Let's try    this
+O  u  tttt
+        </code>
+    </div>
+
+
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/4dfeed27-3258-4f84-b2ad-e7e3566ecee2)
+
+
+
+
 
 
 
