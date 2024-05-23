@@ -279,7 +279,11 @@ O  u  tttt
 
 
 
-
+# Entities
+HTML entities are special codes used to represent characters in HTML. HTML entities ensure that characters are displayed correctly in web browsers without being interpreted as HTML code.  
+These entities begin with an ampersand (&) and end with a semicolon (;).  
+For example, &lt; represents the less-than sign (<),  
+&gt; represents the greater-than sign (>),&amp; represents the ampersand (&). HTML entities ensure that characters are displayed correctly in web browsers without being interpreted as HTML code.  
 
 
 
