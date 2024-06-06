@@ -4,6 +4,7 @@
 - [Artihmetic operators](#artihmetic-operators)
 - [Get & Post](#get-&-post)
 - [](#)
+- [Database](#database)
 
 
 
@@ -62,3 +63,24 @@ $_POST
 ```bash
 
 ```
+
+# Database
+- Start XAMPP Control Panel
+- Start Apache & MySql server
+- Type localhost in browser
+- Click on phpMyAdmin
+- Create DB
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/d980d6df-e266-4c8c-a9e6-c13b73731d59)
+
+Connect to the database, you can find users in  User accounts on phpMyAdmin
+```bash
+<?php
+
+$conn = mysqli_connect("localhost","root","","php_project")
+        or die("Connection failed");
+
+?>
+```
+
+
+
