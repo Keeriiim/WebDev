@@ -7,8 +7,11 @@
 - [Pathing](#pathing)
 - [Tables](#tables)
 - [Formatting](#formatting)
+- [Entities](#entities)
+- [Forms](#forms)
 - [](#)
-- 
+- [](#)
+- [Cheatsheet](#cheatsheet)
 
 # Info
 - !Doctype tells the browser to render the page as a html 5 file.
@@ -284,6 +287,96 @@ HTML entities are special codes used to represent characters in HTML. HTML entit
 These entities begin with an ampersand (&) and end with a semicolon (;).  
 For example, &lt; represents the less-than sign (<),  
 &gt; represents the greater-than sign (>),&amp; represents the ampersand (&). HTML entities ensure that characters are displayed correctly in web browsers without being interpreted as HTML code.  
+
+
+# Forms
+Forms are how we send data to a server.
+```bash
+<form method="GET"                                                              # GET which appends info to url, POST which send info
+ action="somepage.html">                                                        # In this case it will append this to the url which will browse it
+
+        <input> type="text"                                                     # Single line unput, emails or password
+        <textarea name="" id="" cols="30" rows="30" ></textarea>                # Textarea for more text, decided by cols/rows. Good for address 
+        <button type="submit">Submit this form</button>                         # Creates a clickable button that will take form method & action
+        <selection
+</form>
+```
+
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/80741570-bfea-4ef9-9de7-ac3a78a9bd96)  
+
+## Text
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/1c31fe02-ca5e-428e-8fee-61c0cf403ca1)  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/d3f24e32-f087-4852-aa61-3976730fb848)  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/bb106193-663c-4d55-8958-62f25095e15a)  
+
+## Textarea
+```bash
+<form action=""> 
+        <input type="text" value="Nothing" placeholder="Empty">
+        <textarea name="name" id="id1" cols="30" rows="5" placeholder="No text?" >
+        </textarea>
+
+    </form>
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/13a23aa8-5ee9-44db-9ad1-496721189144)  
+
+```bash
+<form action=""> 
+        <input type="text" value="Nothing" placeholder="Empty">
+        <textarea name="name" id="id1" cols="30" rows="5" placeholder="No text?" >
+         This text will be the "value", whitespace does matter shere !         example
+        </textarea>
+
+    </form>
+```  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/9f4cf3ef-4919-4ea1-b1b1-acf0f30f624e)
+
+## Select
+Select creates a dropdown meny
+Example 1: Preselected
+```bash
+<form action="/submit-form" method="post">
+  <label for="car">Choose a car:</label>
+  <select id="car" name="car">
+    <option value="volvo">Volvo</option>
+    <option value="saab" selected>Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit" value="Submit">
+</form>
+
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/eff8c202-e83f-412c-99c6-9ca1bc72041a)  
+
+Example 2: Multiple size
+```bash
+<form action="/submit-form" method="post">
+  <label for="fruits">Choose your favorite fruits:</label>
+  <select id="fruits" name="fruits" multiple size="3">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="cherry">Cherry</option>
+    <option value="date">Date</option>
+    <option value="elderberry">Elderberry</option>
+  </select>
+  <input type="submit" value="Submit">
+</form>
+```
+
+
+```bash
+
+```
+
+```bash
+
+```
+
+```bash
+
+```
+
 
 
 
