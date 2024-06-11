@@ -1,6 +1,6 @@
 - [Info](#info)
 - [Style](#style)
-- [](#)
+- [Font](#font)
 - [](#)
 [](#)
 
@@ -142,3 +142,18 @@ id="id1 id2" is wrong!
 </body>
 </html>
 ```
+
+# Font
+There are 4 font sizes
+
+- px
+This is 1/96 inch and is the smallest size
+
+- pt
+This is 1/72 inch and is the size when chaning in Word, for example 12,14 or 20.
+
+- em
+This size will multiply the default you set. If you have 12 px then 1em is 12. 2em will be 24px.
+
+- rem
+100% of default/root size. If the default is 5 px, 1 rem is 5, 2rem will be 10. If we change rootsize to 20xp then the rem will not be affected.
