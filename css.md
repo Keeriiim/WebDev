@@ -7,7 +7,6 @@
 
 # Info
 Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS defines how elements should be displayed on screen, paper, or in other media.
-
 There are three forms om CSS:
 - Inline:
 ```bash
@@ -52,7 +51,17 @@ There are three forms om CSS:
 ```
 
 # Style
+## Tools
+[Palette](https://colorhunt.co/)
 
+[Color mixer](https://www.csfieldguide.org.nz/en/interactives/rgb-mixer/)
+
+```bash
+p[draggable]{
+color:red
+}
+
+```
 ## Padding
 There is 
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/58cf6963-6fe1-4998-b061-266e0177eb11)
