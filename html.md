@@ -1,5 +1,6 @@
 - [Info](#info)
 - [Syntax](#syntax)
+- [Attribute](#attributes)
 - [Block element vs inline](#Block-element-vs-inline)
 - [Lists](#lists)
 - [Linking](#linking)
@@ -60,6 +61,29 @@ u is deprecated, new way is to add
 
 </div>
 ```
+
+
+
+# Attribute
+Attibutes are things we can set with values. Some or global which means they can be applied to all. Others are specific for the an element.
+
+[Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+- Specific attribute
+  
+```bash
+<a href="google.com"> </a>  # href only works for anchor element
+<p href="google.com"> </p>  
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/4ae9480e-fbee-4703-a0e1-b3a32e285f40)  
+
+- Global attribute
+```bash
+#### Both are now draggable ! ####
+<a href="google.com" draggable="true">Click me </a>  
+<p href="google.com" draggable="true">Click me </p>
+
+```
+
 
 
 
@@ -298,7 +322,7 @@ Forms are how we send data to a server.
         <input> type="text"                                                     # Single line unput, emails or password
         <textarea name="" id="" cols="30" rows="30" ></textarea>                # Textarea for more text, decided by cols/rows. Good for address 
         <button type="submit">Submit this form</button>                         # Creates a clickable button that will take form method & action
-        <selection
+        <select> <option value=test>Test</option> </select>                     # Creates a dropdown menu with the choice test
 </form>
 ```
 
@@ -332,7 +356,7 @@ Forms are how we send data to a server.
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/9f4cf3ef-4919-4ea1-b1b1-acf0f30f624e)
 
 ## Select
-Select creates a dropdown meny
+Used to create a drop-down list within a form. It allows users to choose one or more options from a list of predefined options. The <select> element is commonly used for selecting options like country, state, or other categories where a predefined list is appropriate.
 Example 1: Preselected
 ```bash
 <form action="/submit-form" method="post">
@@ -350,6 +374,7 @@ Example 1: Preselected
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/eff8c202-e83f-412c-99c6-9ca1bc72041a)  
 
 Example 2: Multiple size
+Atm the dropdown will show 3 options without even getting clicked.
 ```bash
 <form action="/submit-form" method="post">
   <label for="fruits">Choose your favorite fruits:</label>
@@ -364,10 +389,21 @@ Example 2: Multiple size
 </form>
 ```
 
-
+Example 3: Disabled
+Disable an option
 ```bash
-
+<form action="/submit-form" method="post">
+        <label for="country">Choose a country:</label>
+        <select id="country" name="country">
+          <option value="usa">United States</option>
+          <option value="canada" disabled>Canada</option>
+          <option value="mexico">Mexico</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
 ```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/962006bd-baef-4c35-8e64-a40d8aacd959)
+
 
 ```bash
 
