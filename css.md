@@ -1,17 +1,33 @@
-
+- [Info](#info)
+- [Style](#style)
+- [](#)
+- [](#)
+[](#)
 
 
 # Info
-Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS defines how elements should be displayed on screen, paper, or in other media
+Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS defines how elements should be displayed on screen, paper, or in other media.
 
-# Style
-
-## Backgroundcolor of the body
+There are three forms om CSS:
+- Inline:
 ```bash
 <!DOCTYPE html>
 <html >
 <head>
-    <title>Second Page</title>
+    <title>Inline</title>
+</head>
+<body>
+<p style="color:red">Paragraph </p>
+</body>
+</html>
+```
+
+- Internal
+```bash
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Internal</title>
     <style>
         body {
             background-color: lightblue;
@@ -23,7 +39,24 @@ Cascading Style Sheets is a stylesheet language used to describe the presentatio
 </html>
 ```
 
+- External
+```bash
+<!DOCTYPE html>
+<html >
+<head>
+    <title>External</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> </body>
+</html>
+```
+
+# Style
+
 ## Padding
+There is 
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/58cf6963-6fe1-4998-b061-266e0177eb11)
+
 ```bash
 <!DOCTYPE html>
 <html >
