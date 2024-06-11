@@ -1,6 +1,6 @@
 - [Info](#info)
 - [Syntax](#syntax)
-- [Attribute](#attributes)
+- [Attribute](#attribute)
 - [Block element vs inline](#Block-element-vs-inline)
 - [Lists](#lists)
 - [Linking](#linking)
@@ -10,7 +10,7 @@
 - [Formatting](#formatting)
 - [Entities](#entities)
 - [Forms](#forms)
-- [](#)
+- [Img & Video](#img-&-video)
 - [](#)
 - [Cheatsheet](#cheatsheet)
 
@@ -405,8 +405,9 @@ Disable an option
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/962006bd-baef-4c35-8e64-a40d8aacd959)
 
 
+# Img & Video
 ```bash
-
+<img src="image.jpg" alt="ants building a colony>              # alt is for blind ppl who needs screen readers
 ```
 
 ```bash
