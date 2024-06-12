@@ -5,8 +5,14 @@
 - [Positioning](#positioning)
 - [Imgs](#imgs)
 - [Border](#border)
-- [](#)
+- [Display type](#display-type)
+- [Shadow](#shadow)
+- [Opacity](#opacity)
 - 
+- [Extra](#extra)
+- [](#)
+- [](#)
+- [](#)
 
 
 # Info
@@ -322,7 +328,23 @@ background-position: center center;             # Will place it on center
 
         }
 ```
-![image](https://github.com/Keeriiim/WebDev/assets/117115289/39f561e8-757e-4f7a-8eb4-9c35950b53c3)
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/39f561e8-757e-4f7a-8eb4-9c35950b53c3)  
+
+## Margin
+```bash
+  #box {
+            margin: 10px 10px 10px 10 px            # top, right, bottom, left
+            margin: auto                            # Moves box to center of page
+            margin-top: 10px
+            margin-bottom: 10px
+
+            ## Alternative ##
+            margin: 10px auto 10px auto;
+
+            ## Alternative ##
+            margin: 10px auto;
+       }
+```
 
 
 
@@ -341,7 +363,37 @@ box-shadow: 10px 10px 15px inset red;
             x    y    blur in/out color   
 ```
 
+# Opacity
+Seethrough
+```bash
+#box{
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        background-color: rgba(0,0,0,0.5)              # This will only affect the box, not the text in the box
+        color: red;                                    # text
+        text-align: center;                            # text
+        opacity: 0.5;                                  # 50% seethrough, will affect anything inside the box
+}
+```
 
+
+
+
+
+# Extra
+```bash
+  box{
+        max-width: 500px;            # Changes for example an inline text to go to next row when the specified amount is reached.
+     }
+```
+
+
+
+```bash
+  
+```
 
 
 
