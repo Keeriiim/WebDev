@@ -3,8 +3,8 @@
 - [Font](#font)
 - [Css rules](#css-rules)
 - [Positioning](#positioning)
-- [](#)
-- [](#)
+- [Imgs](#imgs)
+- [Border](#border)
 - [](#)
 - 
 
@@ -288,14 +288,57 @@ left: 50px
 ## Z-index
 Every object has default z-index: 0;   # Can be -1 or 1
 This is responsbile for moving object on top/behind each other
-```bash
 
+
+# Imgs
+```bash
+div {
+background-image: url("image.png");
+background-size: contain;                       # Replace with cover, 
+background-repeat: no-repeat;                   # Won't duplicate the image if its smaller than the div
+background-position: center center;             # Will place it on center
 ```
 
 
-
+# Border
 ```bash
+.main {
+            background-color: red;
+            position: relative;
+            height: 200px;
+            width: 200px;
 
+            border-width: 15px;
+            border-style: solid;
+            border-color: black;
+
+           /* border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 500px;
+            */
+
+            border-radius: 50px 50px 50px 50px;
+
+        }
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/39f561e8-757e-4f7a-8eb4-9c35950b53c3)
+
+
+
+# Display type
+Divs are block elements which will take up all space. We can make them inline with
+```bash
+div {
+display: inline;            # height, width can not be applead unless changed to inline-block
+border: 1px solid red;      # To see the changes before & after
+```
+
+# Shadow
+Adding this code to a block element will cast a shadow effect.
+```bash
+box-shadow: 10px 10px 15px inset red;
+            x    y    blur in/out color   
 ```
 
 
