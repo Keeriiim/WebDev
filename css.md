@@ -2,7 +2,11 @@
 - [Style](#style)
 - [Font](#font)
 - [Css rules](#css-rules)
-[](#)
+- [Positioning](#positioning)
+- [](#)
+- [](#)
+- [](#)
+- 
 
 
 # Info
@@ -225,7 +229,68 @@ p#specific {              # Chaining
   color: darkblue;
 }
 ```
-![image](https://github.com/Keeriiim/WebDev/assets/117115289/75154a5d-0adf-4548-b4c5-ce8c526a0633)
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/75154a5d-0adf-4548-b4c5-ce8c526a0633)  
+
+# Positioning
+There are 4 ways an object can be positioned
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/edff81d6-59ba-476d-a154-4d6af4589354)  
+
+## Static
+Static is the default that does not need to be coded. 
+This means it won't follow when scrolling and place can not be choosen.
+```bash
+position: static;
+top: 50px                # Does not mater
+left: 50px               # Does not mater
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/9d63cbff-dd75-4e51-8892-fc26a66d88af)  
+
+
+## Relative
+Position will be relative to default position. 
+Default is top left corner if it does not have a parent div that has been moved.
+```bash
+position: relative;
+top: 50px                
+left: 50px               
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/f49482b8-c42e-4e10-90d2-c0f9d21fc51a)  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/a850bf69-8110-4e34-a3c5-44d2d15cc5c1)  
+
+## Absolute
+Position relative to nearest positioned ancestor, or top left corner of webpage.
+The ancestor needs to be in relative position for this to work.
+```bash
+position: absolute;
+top: 50px                
+left: 50px               
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/0f247138-a47e-4c68-b5c6-d16cd1798d7f)
+
+
+## Fixed
+Position relative to top left corner of browser window. Will stay the same when scrolling.
+```bash
+position: fixed;
+top: 50px                
+left: 50px               
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/5199144e-e949-46ad-9f23-44e3073b956b)
+
+
+## Z-index
+Every object has default z-index: 0;   # Can be -1 or 1
+This is responsbile for moving object on top/behind each other
+```bash
+
+```
+
+
+
+```bash
+
+```
+
 
 
 
