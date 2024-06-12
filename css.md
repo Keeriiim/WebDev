@@ -67,6 +67,13 @@ color:red
 
 ```
 
+## Syntax
+```bash
+selector {
+property: value;
+}
+```
+
 ## Class 
 The <style> enables you to write custom css class edits that can be called for text.
 ```bash
