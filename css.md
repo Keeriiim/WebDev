@@ -1,7 +1,7 @@
 - [Info](#info)
 - [Style](#style)
 - [Font](#font)
-- [](#)
+- [Css rules](#css-rules)
 [](#)
 
 
@@ -61,23 +61,6 @@ p[draggable]{
 color:red
 }
 
-```
-## Padding
-There is 
-![image](https://github.com/Keeriiim/WebDev/assets/117115289/58cf6963-6fe1-4998-b061-266e0177eb11)
-
-```bash
-<!DOCTYPE html>
-<html >
-<head>
-    <title>Second Page</title>
-</head>
-<body>
-    <div style padding="20px; color: white; background-color: black;">
-    This text will be padded, have whit text and black background  
-    </div>
-</body>
-</html>
 ```
 
 ## Class 
@@ -144,6 +127,7 @@ id="id1 id2" is wrong!
 ```
 
 # Font
+## Size
 There are 4 font sizes
 
 - px
@@ -157,3 +141,92 @@ This size will multiply the default you set. If you have 12 px then 1em is 12. 2
 
 - rem
 100% of default/root size. If the default is 5 px, 1 rem is 5, 2rem will be 10. If we change rootsize to 20xp then the rem will not be affected.
+
+
+## Weight
+- normal bold
+Normal keyword bold
+
+- lighter / bolder
+Added to change the bold eiter +100 or -100
+
+- number 1-900
+Change the bold amount
+
+## Font family
+Way to change the text style sans-serif for example
+
+
+# Margin, padding, boarder
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/58cf6963-6fe1-4998-b061-266e0177eb11)  
+
+## Boarder
+```bash
+boarder: 30 px solid black                                      # thickness, style, color
+boarder width: 1px 2px 3px 4px                                  # top, right, bottom, left  / top/bottom, right/left
+
+```
+
+## Padding
+Space between content & boarder
+```bash
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Second Page</title>
+</head>
+<body>
+    <div style padding="20px; color: white; background-color: black;">
+    This text will be padded, have white text and black background  
+    </div>
+</body>
+</html>
+```
+
+## Margin
+Space between boarder and outside
+```bash
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Second Page</title>
+</head>
+<body>
+    <p style="padding:20px; border: 30px solid black; margin: 100px; color:red; background-color: blueviolet; ">Hello world</p>
+</body>
+</html>
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/9363b5c1-3cb9-4192-a3c2-db83957f34ee)  
+
+
+
+# Css rules
+Order is as follows
+1. inline style
+2. Internal style in head tag
+3. External style in .css file
+
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/09b9d14f-8af2-46d3-8bbb-49807b9fd877)  
+
+Override any rule
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/d9ffa2d3-71cc-49dd-9585-aa5ed0cd4e4d) 
+
+## Selectors
+
+```bash
+.test > p{
+  color:darkgreen;        # This will go one level deep, not further
+}
+.test p{
+  color: purple           # This will go through all levels
+}
+
+p#specific {              # Chaining
+  color: darkblue;
+}
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/75154a5d-0adf-4548-b4c5-ce8c526a0633)
+
+
+
+
