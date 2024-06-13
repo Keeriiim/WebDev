@@ -267,19 +267,18 @@ background-position: center center;             # Will place it on center
 ```
 
 
+
+
+
+
+
+
+
+
+
 # Border
-# Margin, padding, boarder
+## padding, border, margin, outline
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/58cf6963-6fe1-4998-b061-266e0177eb11)  
-
-## Boarder
-When creating a box and adding a border. The default is box-sizing:content-box - meaning box will increase if u add margin, padding and border size.
-If you want a fixed size with the changes included you need. box-sizing:border-box
-
-```bash
-boarder: 30 px solid black                                      # thickness, style, color
-boarder width: 1px 2px 3px 4px                                  # top, right, bottom, left  / top/bottom, right/left
-
-```
 
 ## Padding
 Space between content & boarder
@@ -297,8 +296,15 @@ Space between content & boarder
 </html>
 ```
 
-## Margin
-Space between boarder and outside
+## Border
+When creating a box and adding a border. The default is box-sizing:content-box - meaning box will increase if u add margin, padding and border size.
+If you want a fixed size with the changes included you need. box-sizing:border-box
+
+```bash
+boarder: 30 px solid black                                      # thickness, style, color
+boarder width: 1px 2px 3px 4px                                  # top, right, bottom, left  / top/bottom, right/left
+```
+
 ```bash
 <!DOCTYPE html>
 <html >
@@ -335,6 +341,7 @@ Space between boarder and outside
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/39f561e8-757e-4f7a-8eb4-9c35950b53c3)  
 
 ## Margin
+Space between boarder and outside
 ```bash
   #box {
             margin: 10px 10px 10px 10 px            # top, right, bottom, left
@@ -349,6 +356,14 @@ Space between boarder and outside
             margin: 10px auto;
        }
 ```
+
+## Outline
+```bash
+outline: 1px solid black;                            # Adds a boarder outside of margin
+outline-offset: 10px;                                # Space between margin & outline
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/d1504641-fe66-4d3a-8c4c-b37b3324035b)
+
 
 
 
