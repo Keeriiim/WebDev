@@ -178,6 +178,9 @@ Way to change the text style sans-serif for example
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/58cf6963-6fe1-4998-b061-266e0177eb11)  
 
 ## Boarder
+When creating a box and adding a border. The default is box-sizing:content-box - meaning box will increase if u add margin, padding and border size.
+If you want a fixed size with the changes included you need. box-sizing:border-box
+
 ```bash
 boarder: 30 px solid black                                      # thickness, style, color
 boarder width: 1px 2px 3px 4px                                  # top, right, bottom, left  / top/bottom, right/left
