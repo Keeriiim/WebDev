@@ -174,49 +174,7 @@ Change the bold amount
 Way to change the text style sans-serif for example
 
 
-# Margin, padding, boarder
-![image](https://github.com/Keeriiim/WebDev/assets/117115289/58cf6963-6fe1-4998-b061-266e0177eb11)  
 
-## Boarder
-When creating a box and adding a border. The default is box-sizing:content-box - meaning box will increase if u add margin, padding and border size.
-If you want a fixed size with the changes included you need. box-sizing:border-box
-
-```bash
-boarder: 30 px solid black                                      # thickness, style, color
-boarder width: 1px 2px 3px 4px                                  # top, right, bottom, left  / top/bottom, right/left
-
-```
-
-## Padding
-Space between content & boarder
-```bash
-<!DOCTYPE html>
-<html >
-<head>
-    <title>Second Page</title>
-</head>
-<body>
-    <div style padding="20px; color: white; background-color: black;">
-    This text will be padded, have white text and black background  
-    </div>
-</body>
-</html>
-```
-
-## Margin
-Space between boarder and outside
-```bash
-<!DOCTYPE html>
-<html >
-<head>
-    <title>Second Page</title>
-</head>
-<body>
-    <p style="padding:20px; border: 30px solid black; margin: 100px; color:red; background-color: blueviolet; ">Hello world</p>
-</body>
-</html>
-```
-![image](https://github.com/Keeriiim/WebDev/assets/117115289/9363b5c1-3cb9-4192-a3c2-db83957f34ee)  
 
 
 
@@ -310,6 +268,49 @@ background-position: center center;             # Will place it on center
 
 
 # Border
+# Margin, padding, boarder
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/58cf6963-6fe1-4998-b061-266e0177eb11)  
+
+## Boarder
+When creating a box and adding a border. The default is box-sizing:content-box - meaning box will increase if u add margin, padding and border size.
+If you want a fixed size with the changes included you need. box-sizing:border-box
+
+```bash
+boarder: 30 px solid black                                      # thickness, style, color
+boarder width: 1px 2px 3px 4px                                  # top, right, bottom, left  / top/bottom, right/left
+
+```
+
+## Padding
+Space between content & boarder
+```bash
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Second Page</title>
+</head>
+<body>
+    <div style padding="20px; color: white; background-color: black;">
+    This text will be padded, have white text and black background  
+    </div>
+</body>
+</html>
+```
+
+## Margin
+Space between boarder and outside
+```bash
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Second Page</title>
+</head>
+<body>
+    <p style="padding:20px; border: 30px solid black; margin: 100px; color:red; background-color: blueviolet; ">Hello world</p>
+</body>
+</html>
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/9363b5c1-3cb9-4192-a3c2-db83957f34ee)  
 ```bash
 .main {
             background-color: red;
