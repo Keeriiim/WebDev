@@ -6,6 +6,7 @@
 - [Imgs](#imgs)
 - [Border](#border)
 - [Display type](#display-type)
+- [Float](#float)
 - [Shadow](#shadow)
 - [Opacity](#opacity)
 - 
@@ -393,7 +394,42 @@ height: 200px;
 width: 200px;
 border: 1px solid red;      # To see the changes before & after
 ```
-![image](https://github.com/Keeriiim/WebDev/assets/117115289/377bf72d-de34-46b5-b056-443d7bad7c12)
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/377bf72d-de34-46b5-b056-443d7bad7c12)  
+
+# Float
+Only use float when you want to wrap text around an image!
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/d7a8053c-9828-4295-891c-48f11e09a261)   
+
+
+Default image:
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/3496c4f2-8682-4861-935e-0664e3c35000)  
+
+## left
+```bash
+img{
+float: left;
+}
+
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/50118e34-bed3-4a2a-baa5-b6a5172ba597)  
+
+## Right
+```bash
+img{
+float: right;
+}
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/4674bdb8-a107-4c09-97f8-bdddbf2ba6ca)  
+
+## Content below
+We can clear left, right or both
+```bash
+footer{
+clear: both;
+}
+```
+
+
 
 
 # Shadow
@@ -401,7 +437,7 @@ Adding this code to a block element will cast a shadow effect.
 ```bash
 box-shadow: 10px 10px 15px inset red;
             x    y    blur in/out color   
-```
+
 
 # Opacity
 Seethrough
