@@ -368,12 +368,33 @@ outline-offset: 10px;                                # Space between margin & ou
 
 
 # Display type
+- block
 Divs are block elements which will take up all space. We can make them inline with
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/ad0fbdac-dd19-4ab8-8fc7-2488d41bc5bf)
+
+
+
+- inline
+<span> is an example of inline
 ```bash
 div {
 display: inline;            # height, width can not be applead unless changed to inline-block
 border: 1px solid red;      # To see the changes before & after
 ```
+
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/679a0b15-e37c-4a96-b85d-a40be748f6d3)
+
+- block-inline
+
+```bash
+div {
+display: inline-block;            # height, width can not be applead unless changed to inline-block
+height: 200px;
+width: 200px;
+border: 1px solid red;      # To see the changes before & after
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/377bf72d-de34-46b5-b056-443d7bad7c12)
+
 
 # Shadow
 Adding this code to a block element will cast a shadow effect.
