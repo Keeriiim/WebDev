@@ -6,6 +6,7 @@
 - [Imgs](#imgs)
 - [Border](#border)
 - [Display type](#display-type)
+- [Display view](#display-view)
 - [Float](#float)
 - [Shadow](#shadow)
 - [Opacity](#opacity)
@@ -395,6 +396,71 @@ width: 200px;
 border: 1px solid red;      # To see the changes before & after
 ```
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/377bf72d-de34-46b5-b056-443d7bad7c12)  
+
+
+
+# Display view
+4 ways of changing the view
+1. Media query
+2. Css Grid
+3. Css flexbox
+4. Frameworks ex bootstrap
+
+## Media query
+Add this to the css file and put the code inside for what will happen to the site. Ex below 600 px navigation bar moves for a nice look.
+```bash
+@media(max-width 600px)
+{
+display everything witin this when screen is up to 600 px wide
+}
+```
+
+## Css grid
+The grid comes with multiple layouts to choose from.
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/355fef68-b0ee-4293-ba5a-71434d01271a)  
+
+
+For example we have grid layout. Notice we set the DISPLAY to grid. Before we had inline, block, inline-block.
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/6fe83d2d-3e2c-42cc-ac28-df4adffa8974) 
+
+```bash
+colums 1fr 1fr means that we have 2 colums of equal width.
+rows 100px 200px 200px means we have 3 rows from top to bottom with the height set.
+
+gap is like margin around all sizes.
+grid-column: span 2; means that it should take the same size as 2 colums, in this case its the whole width.
+
+```
+
+## Css Flexbox
+Another display type that can work horistonal or vertical is flexbox.
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/b6b84f8b-3ebe-47e5-9893-22f0db38bb38)  
+
+```bash
+card class sets the default so there are 4 boxes for the whole row
+.first changes the size 2x default
+.second changes the size 0.5x default
+```
+
+## Bootstrap
+External css that needs to be linked. From this we can use complete layouts.  
+Bootstrap is built on top of flexbox, hence col-12 which is the full width of the page/12
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/79be332a-c2d1-4e40-8db6-03ada906c84e)  
+
+```bash
+if we want to take up half the page we can use col-6 in the class
+```
+
+
+
+
+
+
+
+
+
+
+
 
 # Float
 Only use float when you want to wrap text around an image!
