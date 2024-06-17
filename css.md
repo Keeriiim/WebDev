@@ -495,6 +495,38 @@ clear: both;
 }
 ```
 
+# Flexbox
+Float shold only be used to edit text to a img. But not for layout. Flexbox is better for this.
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/20b9addd-e7c3-4f17-a0e6-9fad590a1f98)  
+
+## Layout differnece
+Table  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/273b87d7-0561-4fd2-bbdf-3d872460cfab)  
+
+Inline-block  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/5d41a20b-c533-44a6-b62c-1384914a15fa)  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/615d9ecc-0fef-4397-a43b-1cdfdff886f9)  
+
+Float 
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/c030a868-4b76-4fa7-8d3f-03d084e58722)  
+
+Flexbox  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/e2ef9cb3-d449-4b13-88d9-4e3f7f76bb28)  
+
+## inline-flex  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/ddb369be-741a-4f1d-a382-a55d0b377bd0)  
+
+## display flex
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/9d5ded89-c65e-422e-9923-da1c0cc5db15)  
+
+
+
+
+
+
+
+
+
 
 
 
