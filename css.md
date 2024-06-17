@@ -495,6 +495,9 @@ clear: both;
 }
 ```
 
+
+
+
 # Flexbox
 Float shold only be used to edit text to a img. But not for layout. Flexbox is better for this.
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/20b9addd-e7c3-4f17-a0e6-9fad590a1f98)  
@@ -519,7 +522,17 @@ Flexbox
 ## display flex
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/9d5ded89-c65e-422e-9923-da1c0cc5db15)  
 
+[Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+```bash
+.container {
+display: flex;                     # Sets it to flex
+gap: 10px;                         # Creates gap between elements
+flex-direction: column;            # row/colum for X or Y axis
 
+.container > *{
+      flex-basis: 100px;           # HAS to be on the child, makes it fit in 100px
+    }
+```
 
 
 
