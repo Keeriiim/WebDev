@@ -581,6 +581,9 @@ Default is flex-start - meaning: all items start from left side of main axis (X-
       flex-direction: row;
       flex-wrap: wrap;                    # Alternative: nowrap
       justify-content: center;            # Alternatives: flex-start, flex-end, center, space-around
+        <!-- Different for row / column -->
+      height: 100px;                      # Adjusts the height of div, low has no effect, high stretches the content
+      width: 800px;                       # Adjusts the width of div, if it's lower than child content it will space out the content
     }    
 
 
@@ -596,7 +599,7 @@ Default is flex-start - meaning: all items start from left side of main axis (X-
 This is set on the parent container itself telling how the children should behave.  
 Default is flex-start - meaning: all items start from top to bottom (Y-axis).  
 ** This Only Affects flex-direction: column **
-
+[FroggyGame](https://appbrewery.github.io/flexboxfroggy/)
 ```bash
 .container {
       color: white;
@@ -605,6 +608,9 @@ Default is flex-start - meaning: all items start from top to bottom (Y-axis).
       flex-direction: column;
       flex-wrap: wrap;                    # Alternative: nowrap
       lign-items: center;                 # Alternatives: flex-start, flex-end, space-around
+      <!-- Different for row / column -->
+      height: 100px;                      # Adjusts the height of div, to low spaces out/ aligns the content, to high has no effect
+      width: 800px;                       # Adjusts the width of div, don't affect the children, only the width of parent container
     }    
 
 
@@ -614,6 +620,29 @@ Default is flex-start - meaning: all items start from top to bottom (Y-axis).
 ```
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/50dea36c-bbd4-4822-bc2f-e702bea6a606)
 
+
+## Align-content
+
+align-content: end; only works if WRAP is displayed.
+```bash
+.container {
+      color: white;
+      border: 5px solid gold;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;                    # Alternative: nowrap
+      lign-items: center;                 # Alternatives: flex-start, flex-end, space-around
+      <!-- Different for row / column -->
+      height: 100px;                      # Adjusts the height of div, to low spaces out/ aligns the content, to high has no effect
+      width: 800px;                       # Adjusts the width of div, don't affect the children, only the width of parent container
+      align-content: end;
+    }    
+
+
+    .container > *{
+      flex-basis: 100px;                  # width for row, height for column
+    }
+```
 
 
 
