@@ -538,11 +538,82 @@ flex-direction: column;            # row/colum for X or Y axis
     }
 ```
 
+## order
+All items are default order 0, meaning the structure is based on what came first inside the html code. We can move a child around.
+
+```bash
+.orange {
+      order: -1;           # Moves it to the first place if any other item has not a lower value.
+    }
+
+.orange {
+      order: 1;           # Moves it to the last place if any other item has not a higher value.
+    }
+```
+
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/dfaa9326-1ebd-446d-a82e-ebf3d28d888a)  
+
+
+
 
 ## Wrap
-Default is nowrap. Meaning. It is set on the container itself telling how the children should behave.  
-[appbrewery.github.io/flex-layout/]
+This is set on the parent container itself telling how the children should behave.  
+Default is nowrap - meaning: any items outside of the web width will dissapear. 
+[Learn wrap](appbrewery.github.io/flex-layout/)  
+
+To keep the item we must enable wrap
+```bash
+.container {
+    flex-wrap: wrap;
+```
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/4465cf91-1e0b-44b4-a32f-29041ab7513c)  
+
+## Justify-content
+This is set on the parent container itself telling how the children should behave.  
+Default is flex-start - meaning: all items start from left side of main axis (X-axis). 
+** This Only Affects flex-direction: row **
+
+```bash
+.container {
+      color: white;
+      border: 5px solid gold;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;                    # Alternative: nowrap
+      justify-content: center;            # Alternatives: flex-start, flex-end, center, space-around
+    }    
+
+
+    .container > *{
+      flex-basis: 100px;                  # width for row, height for column
+    }
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/b689f802-72db-4548-8813-25c7d1e89b57)
+
+
+
+## Align items
+This is set on the parent container itself telling how the children should behave.  
+Default is flex-start - meaning: all items start from top to bottom (Y-axis).  
+** This Only Affects flex-direction: column **
+
+```bash
+.container {
+      color: white;
+      border: 5px solid gold;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;                    # Alternative: nowrap
+      lign-items: center;                 # Alternatives: flex-start, flex-end, space-around
+    }    
+
+
+    .container > *{
+      flex-basis: 100px;                  # width for row, height for column
+    }
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/50dea36c-bbd4-4822-bc2f-e702bea6a606)
+
 
 
 
