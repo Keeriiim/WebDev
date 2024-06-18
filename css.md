@@ -622,7 +622,6 @@ Default is flex-start - meaning: all items start from top to bottom (Y-axis).
 
 
 ## Align-content
-
 align-content: end; only works if WRAP is displayed.
 ```bash
 .container {
@@ -643,6 +642,16 @@ align-content: end; only works if WRAP is displayed.
       flex-basis: 100px;                  # width for row, height for column
     }
 ```
+
+
+## Flex sizing
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/196d35a9-bd49-4b6a-a81a-722e6c06aab3)  
+
+Algorith order
+1. Item size set?
+2. item flex-basis set?
+3. 
+
 
 
 
