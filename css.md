@@ -8,6 +8,7 @@
 - [Display type](#display-type)
 - [Display view](#display-view)
 - [Float](#float)
+- [Flexbox](#flexbox)
 - [Shadow](#shadow)
 - [Opacity](#opacity)
 - 
@@ -522,6 +523,9 @@ Flexbox
 ## display flex
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/9d5ded89-c65e-422e-9923-da1c0cc5db15)  
 
+Parent: flex container
+Children: flex items
+
 [Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 ```bash
 .container {
@@ -533,6 +537,16 @@ flex-direction: column;            # row/colum for X or Y axis
       flex-basis: 100px;           # HAS to be on the child, makes it fit in 100px
     }
 ```
+
+
+## Wrap
+Default is nowrap. Meaning. It is set on the container itself telling how the children should behave.  
+[appbrewery.github.io/flex-layout/]
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/4465cf91-1e0b-44b4-a32f-29041ab7513c)  
+
+
+
+
 
 
 
