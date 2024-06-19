@@ -255,6 +255,82 @@ left: 50px
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/5199144e-e949-46ad-9f23-44e3073b956b)
 
 
+
+## Combined
+```bash
+<style>
+    .box{
+        font-size: 40px;
+        text-shadow: 2px 2px 10px red;
+        color: rgba(0, 0, 0, 0.5);
+        border: 1px solid black;
+    }
+
+    .boxes{
+        display:inline-block;
+        border: 1px solid black;
+        width: 400px;
+        height: 400px;
+        margin: 100px;
+    }
+
+    .red{
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        position: relative; /* will be of no use since parent is static */
+        position: absolute; /* only way */
+        right: 0px;
+        
+    }
+
+    .yellow{
+        background-color: yellow;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        right: 0px;
+    }
+
+    .absolute{
+        position: relative;
+    }
+
+    .blue{
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 0px;
+    }
+</style></head>
+<body>
+    <div class="box">
+        Hello world
+    </div>
+
+    <div class="boxes static">
+        <div class="red">
+            
+        </div>
+    </div>
+    <div class="boxes absolute">
+        <div class="blue">
+            
+        </div>
+    </div>
+    <div class="boxes">
+        <div class="yellow">
+            
+        </div>
+    </div>
+    
+</body>
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/cc145808-3884-4c8b-b944-07de89744ee7)  
+
+
+
 ## Z-index
 Every object has default z-index: 0;   # Can be -1 or 1
 This is responsbile for moving object on top/behind each other
@@ -683,6 +759,7 @@ Adding this code to a block element will cast a shadow effect.
 box-shadow: 10px 10px 15px inset red;
             x    y    blur in/out color   
 
+```
 
 # Opacity
 Seethrough
