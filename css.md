@@ -647,10 +647,21 @@ align-content: end; only works if WRAP is displayed.
 ## Flex sizing
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/196d35a9-bd49-4b6a-a81a-722e6c06aab3)  
 
-Algorith order
-1. Item size set?
-2. item flex-basis set?
-3. 
+### For sizing an item we have 3 things to manipulate
+```bash
+
+.item{
+flex-basis            # sets the inital width of the item
+flex-grow             # 1 / 0 to enable/disable
+flex-shrink           # 1 / 0 to enable/disable
+
+# The basis is default to auto meaning it will give more space to more text. If we want to equal we give it 0;
+flex: 1 1 0;          # grow, shrink, basis  shortcut -> flex: 1;
+}
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/7a45246a-a9c5-465e-9ae4-4eac1d73a28b)  
+
+
 
 
 
