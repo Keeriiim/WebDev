@@ -330,7 +330,18 @@ left: 50px
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/cc145808-3884-4c8b-b944-07de89744ee7)  
 
 
+## Sticky
+We need the child to be a div inside a parent div so it can "stick".
+```bash
+.child1 {
+            position: sticky;
+            background-color: lightblue;
+            top: 0;                            # Without this it wont stick.
 
+        }
+
+
+```
 ## Z-index
 Every object has default z-index: 0;   # Can be -1 or 1
 This is responsbile for moving object on top/behind each other
