@@ -11,8 +11,8 @@
 - [Flexbox](#flexbox)
 - [Shadow](#shadow)
 - [Opacity](#opacity)
-- [overflow](#overflow)
-- [selectors](#selectors)
+- [Overflow](#overflow)
+- [Selectors](#selectors)
 - [Extra](#extra)
 - [](#)
 - [](#)
@@ -776,7 +776,6 @@ flex: 1 1 0;          # grow, shrink, basis  shortcut -> flex: 1;
 
 
 
-
 # Shadow
 Adding this code to a block element will cast a shadow effect.
 ```bash
@@ -784,6 +783,10 @@ box-shadow: 10px 10px 15px inset red;
             x    y    blur in/out color   
 
 ```
+
+
+
+
 
 # Opacity
 Seethrough
@@ -832,37 +835,76 @@ Only one : should be used.
 ```
 
 
-
-
 ## Element selectors 
+Has two :: that should be used.
 ```bash
+.box::before{}
 
+.box::after{}
 
+p::first-letter{}
+
+::selection{                         # When selected, create this effect
+background-coor:green;
+color:white;
+}     
 
 ```
 
 
 
 
-# 
+# Transition
+Delays an effect by seconds
 ```bash
+.box {
+            font-size: 40px;
+            text-shadow: 2px 2px 10px red;
+            color: rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+            transition: 3s;                                 # takes 3 sec to fully apply hover effect
+        }
 
+        .box:hover {
+            color: yellow;
+        }
 
-
+        .box:hover{
+            background-color: green;
+        }
 ```
 
 
 
 
-# 
+# Gradient
+[GEnerator](https://cssgradient.io/)
 ```bash
+.gradient {
+background: rgb(85,85,158);
+background: linear-gradient(90deg, rgba(85,85,158,1) 30%, rgba(0,212,255,1) 50%, rgba(2,0,36,1) 70%);
+}
 
+```
 
+```bash
+.body {
+background-image:  linear-gradient(180deg,
+                                   rgba(0,0,0,0.3) 0%,
+                                   rgba(0,0,0,0.8) 100%,
+                                   url('https...'));
+}
 
 ```
 
 
+# Transform
+```bash
 
+.box{
+transform: translate(100px, 10px);                   #Moves the div x , y px
+}
+```
 
 
 
