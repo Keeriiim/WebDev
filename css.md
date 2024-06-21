@@ -11,7 +11,8 @@
 - [Flexbox](#flexbox)
 - [Shadow](#shadow)
 - [Opacity](#opacity)
-- 
+- [overflow](#overflow)
+- [selectors](#selectors)
 - [Extra](#extra)
 - [](#)
 - [](#)
@@ -62,6 +63,11 @@ There are three forms om CSS:
 <body> </body>
 </html>
 ```
+
+
+
+
+
 
 # Style
 ## Tools
@@ -145,6 +151,11 @@ id="id1 id2" is wrong!
 </body>
 </html>
 ```
+
+
+
+
+
 
 # Font
 ## Size
@@ -347,6 +358,10 @@ Every object has default z-index: 0;   # Can be -1 or 1
 This is responsbile for moving object on top/behind each other
 
 
+
+
+
+
 # Imgs
 ```bash
 div {
@@ -355,11 +370,6 @@ background-size: contain;                       # Replace with cover,
 background-repeat: no-repeat;                   # Won't duplicate the image if its smaller than the div
 background-position: center center;             # Will place it on center
 ```
-
-
-
-
-
 
 
 
@@ -430,6 +440,8 @@ boarder width: 1px 2px 3px 4px                                  # top, right, bo
 ```
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/39f561e8-757e-4f7a-8eb4-9c35950b53c3)  
 
+
+
 ## Margin
 Space between boarder and outside
 ```bash
@@ -447,12 +459,25 @@ Space between boarder and outside
        }
 ```
 
+I can also center a div with margin
+```bash
+display:block;
+height: 400px;
+width: 400px;
+margin-left: auto;
+margin-right: auto;                  # alternative margin: 50px auto;
+
+```
+
+
 ## Outline
 ```bash
 outline: 1px solid black;                            # Adds a boarder outside of margin
 outline-offset: 10px;                                # Space between margin & outline
 ```
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/d1504641-fe66-4d3a-8c4c-b37b3324035b)
+
+
 
 
 
@@ -484,6 +509,9 @@ width: 200px;
 border: 1px solid red;      # To see the changes before & after
 ```
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/377bf72d-de34-46b5-b056-443d7bad7c12)  
+
+
+
 
 
 
@@ -544,12 +572,6 @@ if we want to take up half the page we can use col-6 in the class
 
 
 
-
-
-
-
-
-
 # Float
 Only use float when you want to wrap text around an image!
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/d7a8053c-9828-4295-891c-48f11e09a261)   
@@ -582,6 +604,8 @@ footer{
 clear: both;
 }
 ```
+
+
 
 
 
@@ -753,17 +777,6 @@ flex: 1 1 0;          # grow, shrink, basis  shortcut -> flex: 1;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 # Shadow
 Adding this code to a block element will cast a shadow effect.
 ```bash
@@ -786,6 +799,71 @@ Seethrough
         opacity: 0.5;                                  # 50% seethrough, will affect anything inside the box
 }
 ```
+
+
+
+
+
+# Overflow
+if the text will extend the max div size we can use overflow.
+```bash
+.box{
+height:300px
+width:300px;
+overflow: auto;                                         # auto makes the div scrollable, visible is default, hidden: hides content, 
+
+}
+```
+
+
+
+
+# Selectors
+
+## Pseudo selectors
+Only one : should be used.
+```bash
+.box:hover            # creates hover effect
+
+.box:not(#id)         # applies effect to theclass except id 
+
+.box:nth-child(6)     # selects 5 th element to apply effect, counts from 1
+
+```
+
+
+
+
+## Element selectors 
+```bash
+
+
+
+```
+
+
+
+
+# 
+```bash
+
+
+
+```
+
+
+
+
+# 
+```bash
+
+
+
+```
+
+
+
+
 
 
 
