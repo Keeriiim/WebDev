@@ -14,7 +14,7 @@
 - [Overflow](#overflow)
 - [Selectors](#selectors)
 - [Extra](#extra)
-- [](#)
+- [Bootstrap](#bootstrap)
 - [](#)
 - [](#)
 
@@ -1046,8 +1046,16 @@ No float - None
 [Visibility](https://getbootstrap.com/docs/5.3/utilities/visibility/)  
 Invisible will still take up space while d-none will remove the element.
 
-#
-[]()
+# Text
+[Text](https://getbootstrap.com/docs/5.3/utilities/text/)  
+
+```bash
+Example of using multiple bootstrap values
+
+<p class="text-xl-end text-end">TEXT TEXT TEXT</p>                      # Text will be on the right side as default, left when xl-size is applied
+
+```
+
 
 #
 []()
