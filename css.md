@@ -371,6 +371,34 @@ background-repeat: no-repeat;                   # Won't duplicate the image if i
 background-position: center center;             # Will place it on center
 ```
 
+## Responsive imgs
+Covering full site, and is relational to how much you resize the window
+```bash
+  <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        body img{
+            width: 100%;
+            height: 100%;                 # Works with auto aswell
+        }
+
+    </style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/736x/49/d6/5d/49d65da4bf373d90d1c5d151f2025d5b.jpg">
+    
+</body>
+```
+
+
+## Responsive Embedded
+```bash
+  
+```
+
 
 
 
@@ -920,9 +948,116 @@ transform: translate(100px, 10px);                   #Moves the div x , y px
 
 
 
+
+
+# Bootstrap
+This is a frontend html framework with predefined tools one can use.
+[Bootstrap](https://getbootstrap.com/)
+
+You can either link it and use it or download the whole package to use in offline mode.  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/1f769cd9-04f7-446c-9210-a9ef7369af1e)  
+
 ```bash
-  
+<style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</style>
+
+....
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 ```
+
+## Utilities
+Utiliites give you the option to self define new variables
+[Utilities](https://getbootstrap.com/docs/5.3/utilities/api/)  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/cd79a5fb-3153-41e0-b657-f613649b2528)
+
+
+
+## Boarders
+
+## Colors
+[Colors](https://getbootstrap.com/docs/5.3/utilities/colors/) 
+
+
+## Display
+We can choose what and how to display our elements. [Display](https://getbootstrap.com/docs/5.3/utilities/display/)
+
+```bash
+<div class="d-none d-print-block">              # This will hide the content from the webpage, but display when print is selected
+<p>Hello world</p>
+</div>
+```
+
+## Print
+```bash
+<div class="d-print-none">                      # This will hide the content when print is selected.
+<p>Hello world</p>
+</div>
+
+## The other ways are how it should look at print stage ## 
+```
+
+## Float
+Float have 3 options
+Left - Start
+Right - End
+No float - None
+```bash
+  <div class="float-sm-end">Float end on viewports sized SM (small) or wider</div><br>
+<div class="float-md-end">Float end on viewports sized MD (medium) or wider</div><br>
+<div class="float-lg-end">Float end on viewports sized LG (large) or wider</div><br>
+<div class="float-xl-end">Float end on viewports sized XL (extra large) or wider</div><br>
+<div class="float-xxl-end">Float end on viewports sized XXL (extra extra large) or wider</div><br>
+```
+
+## Click Interaction
+[Click](https://getbootstrap.com/docs/5.3/utilities/interactions/)
+```bash
+<p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+
+```
+
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/a7816472-c756-46f8-a30c-29328545e2ea)  
+
+## Links
+[Links](https://getbootstrap.com/docs/5.3/utilities/link/)
+```bash
+<a href="#" class="text-decoration-none">This is a link without underline</a>
+```
+
+## Position
+[Position](https://getbootstrap.com/docs/5.3/utilities/position/)
+
+## Shadows
+[Shadow](https://getbootstrap.com/docs/5.3/utilities/shadows/)
+
+## Sizing
+[Sizing](https://getbootstrap.com/docs/5.3/utilities/sizing/)  
+
+## Margin & Padding
+[Spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/)
+
+
+
+
+# Visibility
+[Visibility](https://getbootstrap.com/docs/5.3/utilities/visibility/)  
+Invisible will still take up space while d-none will remove the element.
+
+#
+[]()
+
+#
+[]()
+
+#
+[]()
+
+
+
+
 
 
 
