@@ -126,10 +126,16 @@ CREATE TABLE IF NOT EXISTS `products` (
 ) ENGINE=InnoDB CHARSET=latin1;
 ```
 
+# Adding a product based on previous code
+```bash
+INSERT INTO `products`(`product_name`,`product_category`,`product_description`,`product_image`,`product_image2`,`product_image3`,`product_image4`,`product_price`,`product_special_offer`,`product_color`) VALUES ('Red Shoes','shoes','Red Shoes','featured1.png','featured1.png','featured1.png','featured1.png',155.0,'Red/Black'
+
+```  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/78a21ef0-aa55-4423-ac82-56180e0141be)  
 
 
 
-# Connecting to PHP from code
+# Connecting to the DB via PHP
 - Go to your project folder and create a con to the DB in server/connection.php
 ```bash
 <?php
@@ -150,6 +156,19 @@ $conn = mysqli_connect("localhost","root","","php_project")
 php -S localhost:8000
 ```
 
+# Display porod from DB
+```bash
+<?php 
+include('connection.php');
+
+$stmt = $conn->prepare("SELECT * FROM products WHERE product_category='shoes' LIMIT 4"); /* After connection, we prepare the SQL statement which will fetch the first 4 products from the database */
+
+$stmt->execute(); /* Execute the statement */
+
+$featured_prod_result = $stmt->get_result(); /* Get the result */
+
+?>
+```
 
 
 
