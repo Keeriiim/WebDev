@@ -75,15 +75,6 @@ $_POST
 
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/3fdc00b8-6a19-45a2-b3d2-0896f491540e)  
 
-- Connect to the database, you can find users in  User accounts on phpMyAdmin
-```bash
-<?php
-
-$conn = mysqli_connect("localhost","root","","php_project")
-        or die("Connection failed");
-
-?>
-```
 
 - Add SQL code to create the DB tables in phpMyAdmin, press on Go when done
 ```bash
@@ -135,8 +126,25 @@ CREATE TABLE IF NOT EXISTS `products` (
 ) ENGINE=InnoDB CHARSET=latin1;
 ```
 
-- Go to your project folder, switch your .html files to php
 
+
+
+# Connecting to PHP from code
+- Go to your project folder and create a con to the DB in server/connection.php
+```bash
+<?php
+
+$conn = mysqli_connect("localhost","root","","php_project")
+        or die("Connection failed");
+
+?>
+```  
+
+- Local accounts
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/55a46d49-aa62-4a0c-9fb0-3d2e534cd08a)  
+
+
+- Switch html files to .php
 ```bash
 ## When .html -> .php you have to run it on apache webserver.
 php -S localhost:8000
