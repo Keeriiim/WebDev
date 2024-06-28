@@ -69,8 +69,8 @@ $_POST
 - Start Apache & MySql server
 - Type localhost in browser
 - Click on phpMyAdmin
-- Create DB
-![image](https://github.com/Keeriiim/WebDev/assets/117115289/d980d6df-e266-4c8c-a9e6-c13b73731d59)
+- Create DB  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/d980d6df-e266-4c8c-a9e6-c13b73731d59)  
 
 
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/3fdc00b8-6a19-45a2-b3d2-0896f491540e)  
