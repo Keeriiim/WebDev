@@ -3,7 +3,13 @@
 - [Variables](#variables)
 - [Artihmetic operators](#artihmetic-operators)
 - [Get & Post](#get-&-post)
-- [](#)
+- [Database](#database)
+- [Adding a product based on previous code](#adding-a-product-based-on-previous-code)
+- [Connecting to the DB via PHP](#connecting-to-the-db-via-php)
+- [Display prod from DB](#display-prod-from-db)
+- [Go to single product](#go-to-single-product)
+- 
+- Go to single product
 - [Database](#database)
 
 
@@ -156,7 +162,7 @@ $conn = mysqli_connect("localhost","root","","php_project")
 php -S localhost:8000
 ```
 
-# Display porod from DB
+# Display prod from DB
 ```bash
 <?php 
 include('connection.php');
@@ -169,6 +175,25 @@ $featured_prod_result = $stmt->get_result(); /* Get the result */
 
 ?>
 ```
+
+
+# Go to single product
+We want to enter new page by clicking the button
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/2479e4f7-b5ee-4728-b5f4-c6446bb40e79)  
+```bash
+First we change .html to .php for single_product
+
+then we go to index.php and add this code for the featured product
+
+<a href="single_product.php?id=<?php echo $row['product_id']; ?>"> <button class="buy-btn">Buy Now</button></a>
+
+ALTERNATIVE
+
+<a href="<?php echo "single_product.php?id=". $row['product_id']; ?>"> <button class="buy-btn">Buy Now</button></a>
+              
+              
+```
+
 
 
 
