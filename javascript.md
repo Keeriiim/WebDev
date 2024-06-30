@@ -48,6 +48,8 @@ document.getElementById(id1)                                         # Finds the
 document.getElementById("myH1").textContent = "Hello"            
 ````
 
-# Syntax
+# Error
 If any error gets caught, the rest of the console will not be printed. 
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/9421359d-8fae-459b-accf-8e180d3cd326)
+
 
