@@ -1,5 +1,5 @@
 - [Info](#info)
-- [](#)
+- [Error](#error)
 - [](#)
 - [](#)
 - [](#)
@@ -45,5 +45,9 @@ document.getElementById(id1)                                         # Finds the
 
 
 ######### script.js #########
-document.getElementById("myH1").textContent = "Hello"            #
+document.getElementById("myH1").textContent = "Hello"            
 ````
+
+# Syntax
+If any error gets caught, the rest of the console will not be printed. 
+
