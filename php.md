@@ -136,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `products` (
 ```bash
 INSERT INTO `products`(`product_name`,`product_category`,`product_description`,`product_image`,`product_image2`,`product_image3`,`product_image4`,`product_price`,`product_special_offer`,`product_color`) VALUES ('Red Shoes','shoes','Red Shoes','featured1.png','featured1.png','featured1.png','featured1.png',155.0,'Red/Black'
 
-```  
+```   
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/78a21ef0-aa55-4423-ac82-56180e0141be)  
 
 
@@ -152,7 +152,7 @@ $conn = mysqli_connect("localhost","root","","php_project")
 ?>
 ```  
 
-- Local accounts
+- Local accounts  
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/55a46d49-aa62-4a0c-9fb0-3d2e534cd08a)  
 
 
@@ -177,22 +177,23 @@ $featured_prod_result = $stmt->get_result(); /* Get the result */
 ```
 
 
-# Go to single product
-We want to enter new page by clicking the button
-![image](https://github.com/Keeriiim/WebDev/assets/117115289/2479e4f7-b5ee-4728-b5f4-c6446bb40e79)  
+# Linking a product's button/img to single product page
+We want to enter new page by clicking the button  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/2479e4f7-b5ee-4728-b5f4-c6446bb40e79)   
 ```bash
 First we change .html to .php for single_product
 
-then we go to index.php and add this code for the featured product
+then we go to index.php and add this code for the featured product, this will show the id in the url of the pressed button and go to single_product.php
 
 <a href="single_product.php?id=<?php echo $row['product_id']; ?>"> <button class="buy-btn">Buy Now</button></a>
 
 ALTERNATIVE
 
 <a href="<?php echo "single_product.php?id=". $row['product_id']; ?>"> <button class="buy-btn">Buy Now</button></a>
-              
-              
+                        
 ```
+
+# single product page
 
 
 
