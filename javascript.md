@@ -17,6 +17,13 @@ JavaScript enables dynamic content, control multimedia, animate images, and pret
 
 # Syntax
 ```bash
+var name                           # Global var(iable) declaration accessable everywhere
+let first                          # Local declaration
+const forever                      # Unchangable value, Local declaration
+```
+
+
+```bash
 document.getElementById(id1)                                         # Finds the reference id named id1
 
 ```
@@ -51,6 +58,17 @@ document.getElementById("myH1").textContent = "Hello"
 # Error
 If any error gets caught, the rest of the console will not be printed. 
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/9421359d-8fae-459b-accf-8e180d3cd326)  
+
+
+```bash
+console.warn("warning marked yellow");
+console.error("Error marked red");
+
+
+Glossary:
+
+Failed to load resource Err_FILE_NOT_FOUND - Syntax error in <script src="somethin.js">
+```
 
 
 
