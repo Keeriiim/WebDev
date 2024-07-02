@@ -55,7 +55,52 @@ If any error gets caught, the rest of the console will not be printed.
 
 
 # Logic
+
+## Loops
 ```bash
+###### for ######
+for(let i = 0; i <= 2; i++){
+console.log(i);
+}
+
+
+
+
+
+
+###### while ######
+let userName = "";
+
+while(username ===""){
+username = window.prompt("Enter ur name")
+}
+
+console.log($userName)
+
+
+###### Do while ######
+let userName;
+
+do {
+username = window.prompt("Enter ur name")
+}while(username ==="")
+
+console.log($userName)
+```
+
+## Operators
+```bash
+
+###### Operators ######
+AND = &&
+OR = ||
+NOT = !
+
+==  - comparing if values are equal
+=== - comparing if values and datatype are equal
+!=
+!==
+
 
 ###### Ternary ######
 let age = 15;
@@ -112,6 +157,18 @@ let fullName = "John Doe";
 let first = fullName.slice(0,fullName.indexOf(" "));       # char 0 to first "space"
 let last = fullName.slice(fullName.indexOf(" ")+1);        # char first "space" + 1 to end
 
+```
+
+
+
+# Functions
+```bash
+funcion example(abc, efg){                        # Defines a method with parameters
+return abc + efg;
+}
+
+
+example(2,4)                                      # Order is important of the numbers!
 ```
 
 
