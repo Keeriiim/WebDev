@@ -1,7 +1,7 @@
 - [Info](#info)
 - [Error](#error)
 - [Logic](#logic)
-- [](#)
+- [Strings](#strings)
 - [](#)
 - [](#)
 - [](#)
@@ -158,6 +158,73 @@ let first = fullName.slice(0,fullName.indexOf(" "));       # char 0 to first "sp
 let last = fullName.slice(fullName.indexOf(" ")+1);        # char first "space" + 1 to end
 
 ```
+
+
+# Arrays
+```bash
+
+let fruits=["apple","pear","banana"];
+
+Dictionary:
+
+##### Managing #####
+.push("cocunut")                       # Adds cocunut to the beginning    
+.pop()                                 # Removes last element
+.unshift("mango")                      # Adds to the beginning
+.shift()                               # Deletes the first
+##### SORTING #####
+
+.sort()                                # Sorts
+.sort().reverse()                      # Sorts in reverse
+
+
+#### Looping ####
+for(let fruit of fruits){              # Prints all fruits
+console.log(fruit);
+}
+```
+
+## Spread operator
+```bash
+                    ...  allows an iterable such as an array or string to be exapnded into separate elements
+
+let name = "John Doe";
+let letters = [...name];
+
+console.log(letters);
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/873e0681-9d63-4ea5-b9d1-9620747431fb)
+  
+
+```bash
+                    ... allows an iterable such as an array or string to be exapnded into separate elements
+
+let name = "John Doe";
+let letters = [...name].join("-");
+
+console.log(letters);
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/14838aa6-d956-4cee-ad04-7b98095f0478)  
+
+```bash
+                    ... allows an iterable such as an array or string to be exapnded into separate elements
+
+let name = ["John Doe", "Sirius Black"];
+let last = ["Doe John ", "Black Sirius "];
+let combined = [...name,...last,last];
+
+console.log(combined);
+```
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/c5025974-33a1-4b51-a221-e02a61b95f58)  
+
+
+
+
+
+
+
+
+
 
 
 
