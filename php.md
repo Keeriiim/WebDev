@@ -40,9 +40,104 @@ $counter--;
 ```
 
 # Get & Post
+
+## Get
+```bash
+###### Server ######
+<?php
+
+$conn = mysqli_connect("localhost","root","","php_project")
+        or die("Connection failed");
+
+?>
+
+###### Home page ######
+This when pressed will redirect to the right product page and add URL text
+<a href="single_product.php?id=<?php echo $row['product_id']; ?>"> <button class="buy-btn">Buy Now</button></a>
+
+
+
+
+##### Single_prod #####
+This will enable to take the valie of id = ? and use it
+
+<?php 
+
+include('server/connection.php'); /* Include the connection file */
+
+if(isset($_GET['id'])){ /* If the product_id is set in the URL */
+
+  $product_id=$_GET['id']; /* Get the product_id from the URL */
+
+  $stmt = $conn->prepare("SELECT * FROM products WHERE product_id = ? LIMIT 1"); /* This will  */
+  $stmt->bind_param("i", $product_id); /* Bind the product_id to the statement */
+
+  $stmt->execute(); /* Execute the statement */
+
+  $product = $stmt->get_result(); /* Get the result */
+    
+}
+else {
+    
+    header("Location: index.php"); 
+}
+```
+
+
+## Post
 ```bash
 
+##### Form #####
+To send information we will create a form in the single product page
+
+  <div class="col-lg-6 col-md-12 col-12">
+                <h6>Men/Shoes</h6>
+                <h3 class="py-4"><?php echo $row["product_name"]?></h3>
+                <h2>$<?php echo $row["product_price"]?></h2>
+
+                <form action="cart.php" method="POST"> <!-- This form will be used to add the product to the cart -->
+                  <input type="hidden" name="product_id" value="<?php echo $row['product_id']; ?>"> <!-- This will be used to get the product_id when the form is submitted -->
+                  <input type="hidden" name="product_image" value="<?php echo $row['product_image']; ?>"> <!-- This will be used to get the product_image when the form is submitted -->
+                  <input type="hidden" name="product_name" value="<?php echo $row['product_name']; ?>"> <!-- This will be used to get the product_name when the form is submitted -->
+                  <input type="hidden" name="product_price" value="<?php echo $row['product_price']; ?>"> <!-- This will be used to get the product_price when the form is submitted -->
+                  <input type="number" name ="product_quantity" value="1"/>  <!-- This will be used to get the product_quantity when the form is submitted -->
+                  <button class="buy-btn" type="submit" name="add_to_cart">Add to cart</button>
+                  
+                </form>  
+                
+                <h4 class="mt-5 mb-5">Product details</h4>
+                <span><?php echo $row["product_description"]?></span>
+            </div> 
+          
+        </div> 
+
+
+##### Cart #####
+Now in the cart page we need to 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Variables
 $_GET $_POST = special variables used to collect data from an HTML form,  
