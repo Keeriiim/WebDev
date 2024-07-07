@@ -330,6 +330,44 @@ echo $grades[$_POST['student']];
 
 
 
+# Function
+```bash
+<?php
+function hello($name){
+echo 'My name is $name'
+}
+
+function("John");
+
+?>
+```
+
+# Logic
+```bash
+
+##### if #####
+<?php
+$isMale = true;
+
+if$isMale){
+return 'You are a $isMale'
+}
+?>
+
+
+
+
+##### switch #####
+switch($num){
+
+case 1:
+ function x();
+ break;
+
+```
+
+
+
 
 
 
