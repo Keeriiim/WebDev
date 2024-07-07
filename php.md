@@ -131,14 +131,6 @@ Now in the cart page we need to
 
 
 
-
-
-
-
-
-
-
-
 # Variables
 $_GET $_POST = special variables used to collect data from an HTML form,  
 data is sent to the file in the action attribute <form action="file.php" method="get">
@@ -289,6 +281,52 @@ ALTERNATIVE
 ```
 
 # single product page
+
+
+
+
+
+# Logic
+```bash
+##### Array #####
+<?php
+$friends = array('abc','efg','hij');
+echo $friends[2]   
+?>
+
+
+
+##### Checkboxes #####
+<form action="site.php" method="post">
+        <input type="checkbox" name="fruits[]" value="apples" />
+        <input type="checkbox" name="fruits[]" value="oranges" />
+        <input type="checkbox" name="fruits[]" value="bananas" />
+        <input type="submit" />
+</form>
+
+<?php
+        $fruits = $_POST['fruits'];
+        echo $fruits
+?>
+
+
+
+
+##### Associated arrays (dictionaries) #####
+<?php
+$grades = array('edo'=>'A', 'delvin'=>'B-');
+echo $grades['edo'];                                  # Prints A
+echo count($grades)
+
+<form action="site.php" method="post">
+<input type='text' name='student'/>
+<input type='submit'/>
+</form>
+
+echo $grades[$_POST['student']]; 
+?>
+
+```
 
 
 
