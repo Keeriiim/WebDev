@@ -11,6 +11,8 @@
 - 
 - Go to single product
 - [Database](#database)
+- [Logic](#logic)
+- [Class](#class)
 
 
 
@@ -367,7 +369,69 @@ case 1:
 ```
 
 
+# Class
+```bash
+<?php
 
+class Book{
+
+var $author
+var $title
+var $pages
+
+}
+
+$myBook = new Book();                # Creating an object
+
+$myBook->author = 'John Doe';
+
+echo $myBook->author;
+
+?>
+```
+
+
+
+## Constructor
+```bash
+<?php
+
+class Book{
+
+var $author
+var $title
+var $pages
+
+
+function _construct($name){                        # Runs by default
+        echo $name;
+}
+}
+
+?>
+
+$myBook = new Book('John Doe');
+
+```
+
+
+
+```bash
+<?php
+
+?>
+
+
+```
+
+
+```bash
+<?php
+
+?>
+
+
+```
 
 
 
