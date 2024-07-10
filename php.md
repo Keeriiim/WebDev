@@ -403,7 +403,7 @@ var $title
 var $pages
 
 
-function _construct($name){                        # Runs by default
+function __construct($name){                        # Runs by default, has two _ 
         echo $name;
 }
 }
