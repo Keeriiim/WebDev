@@ -393,6 +393,7 @@ echo $myBook->author;
 
 
 ## Constructor
+There is not an option for multiple contrusctors like java.
 ```bash
 <?php
 
@@ -402,7 +403,6 @@ var $author
 var $title
 var $pages
 
-
 function __construct($name){                        # Runs by default, has two _ 
         echo $name;
 }
@@ -411,6 +411,48 @@ function __construct($name){                        # Runs by default, has two _
 ?>
 
 $myBook = new Book('John Doe');
+
+
+
+
+
+######## Instead of multiple ############
+
+
+<?php
+class Book {
+    private $title;
+    private $author;
+
+    function __construct($title = null, $author = null){
+        if ($title !== null && $author !== null) {
+            $this->title = $title;
+            $this->author = $author;
+        } elseif ($title !== null) {
+            $this->title = $title;
+            // Default value for author
+            $this->author = "Unknown Author";
+        } else {
+            // Default values
+            $this->title = "Unknown Title";
+            $this->author = "Unknown Author";
+        }
+    }
+
+    function display() {
+        echo "Title: " . $this->title . ", Author: " . $this->author;
+    }
+}
+
+// Creating objects with different parameters
+$book1 = new Book();
+$book2 = new Book("1984");
+$book3 = new Book("1984", "George Orwell");
+
+$book1->display(); // Output: Title: Unknown Title, Author: Unknown Author
+$book2->display(); // Output: Title: 1984, Author: Unknown Author
+$book3->display(); // Output: Title: 1984, Author: George Orwell
+?>
 
 ```
 
