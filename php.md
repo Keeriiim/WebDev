@@ -42,7 +42,7 @@ $counter--;
 ```
 
 # Get & Post
-
+if there is a typo in method ex metod, it will default to GET so the parameters will get added to the URL.
 ## Get
 ```bash
 ###### Server ######
