@@ -457,10 +457,34 @@ $book3->display(); // Output: Title: 1984, Author: George Orwell
 ```
 
 
-
+## Object Functions
 ```bash
-<?php
+<<?php
 
+class Book {
+var $author;
+var $title;
+var $pages;
+
+function __construct($author,$title,$pages){      
+        $this->author = $author;
+        $this->title = $title;
+        $this->pages = $pages;
+}
+
+function isBig(){                   
+if($this->pages >= 500){
+return 'Books is large';
+}else{
+return 'Book is small';
+}
+}
+
+}
+
+$myB = new Book('J','T',500);
+
+echo $myB->isBig();
 ?>
 
 
