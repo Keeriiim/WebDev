@@ -17,6 +17,7 @@
 
 
 # Variables
+public, protected, or private  ---- var is not for php !
 ```bash
 $name = "J Doe";                      # Creating the variable
 $pizza ="4.99";
@@ -459,7 +460,7 @@ $book3->display(); // Output: Title: 1984, Author: George Orwell
 
 ## Object Functions
 ```bash
-<<?php
+<?php
 
 class Book {
 var $author;
@@ -487,8 +488,56 @@ $myB = new Book('J','T',500);
 echo $myB->isBig();
 ?>
 
+```
+
+
+# Get & Set
+Variables and methods are public by default - anyone can access and modify them.
+```bash
+<?php
+class Book {
+public var $author;
+
+function __construct($author){      
+        $this->author = $author;
+}
+
+function getAuthor(){
+        return $this
+}
+
+$b = new Book('John');
+$b->author = 'Garen';
+
+echo $b->author;
+?>
+
 
 ```
+
+
+
+
+
+```bash
+<?php
+
+?>
+
+
+```
+
+
+
+
+```bash
+<?php
+
+?>
+
+
+```
+
 
 
 ```bash
