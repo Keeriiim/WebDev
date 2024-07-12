@@ -376,9 +376,9 @@ case 1:
 
 class Book{
 
-var $author
-var $title
-var $pages
+$author
+$title
+$pages
 
 }
 
@@ -400,9 +400,9 @@ There is not an option for multiple contrusctors like java.
 
 class Book{
 
-var $author
-var $title
-var $pages
+$author
+$title
+$pages
 
 function __construct($name){                        # Runs by default, has two _ 
         echo $name;
@@ -463,9 +463,9 @@ $book3->display(); // Output: Title: 1984, Author: George Orwell
 <?php
 
 class Book {
-var $author;
-var $title;
-var $pages;
+$author;
+$title;
+$pages;
 
 function __construct($author,$title,$pages){      
         $this->author = $author;
@@ -494,16 +494,19 @@ echo $myB->isBig();
 # Get & Set
 Variables and methods are public by default - anyone can access and modify them.
 ```bash
+
+########## Public , without GET/SET ###########
 <?php
 class Book {
-public var $author;
+    public $author;
 
-function __construct($author){      
+    function __construct($author){      
         $this->author = $author;
-}
+    }
 
-function getAuthor(){
-        return $this
+    function getAuthor(){
+        return $this->author;
+    }
 }
 
 $b = new Book('John');
@@ -512,6 +515,37 @@ $b->author = 'Garen';
 echo $b->author;
 ?>
 
+
+
+########## Private , must have GET/SET ###########
+<?php
+class Book {
+    private $author;
+
+    function __construct($author){      
+        $this->author = $author;
+    }
+
+    function getAuthor(){
+        return $this->author;
+    }
+    
+    function setAuthor($newAuthor){
+    	$this->author = $newAuthor;
+	}
+}
+
+$b = new Book('John');
+// $b->author = 'Garen';        # will not work
+
+// echo $b->author;                # will not work
+
+echo $b->getAuthor();
+echo "<br>";
+
+$b->setAuthor('Steve');
+echo $b->getAuthor();
+?>
 
 ```
 
