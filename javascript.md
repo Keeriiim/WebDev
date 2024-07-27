@@ -7,7 +7,7 @@
 - [](#)
 - [](#)
 - [](#)
-- [](#)
+- [jQuery](#jquery)
 
 
 # Info
@@ -256,4 +256,40 @@ return abc + efg;
 example(2,4)                                      # Order is important of the numbers!
 ```
 
+
+
+# jQuery
+Eliminates the need for different browse support for you javascript. It is a library, not a framework.
+
+## Tip
+h1.customClass#customID + tab enter -> <h1 class="customClass" id="customId"></h1>
+
+## Installation
+[Download](https://jquery.com/download/)  
+
+### CDN
+Content Delivery Network -> fetches from the closest server to your location. Enables caching -> faster download.
+
+## Syntax
+
+```bash
+$(SELECTOR)  .EVENT  (CALL_BACK_FUNC(){} );                      
+
+###### Dictionary ######
+.html(<p>Hello</p>);                            # Add html code
+.text("new");                                   # Change current output to new
+.css("color","blue");                           # Change css
+
+ ### input ###
+.val();                                         # Empty is to GET the value, add something to change
+
+.append();                                      # Adds something after  (inside an element, h,section,p, etc)
+.prepend();                                     # Adds something before (inside an element, h,section,p, etc)
+.after();                                       # Adds something before (outside an element, input)
+.before():                                      # Adds something before (outside an element, input)
+
+
+ ### Deleting ###
+.remove();                                      # Removes
+```
 
