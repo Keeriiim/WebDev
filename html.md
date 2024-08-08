@@ -355,9 +355,9 @@ Forms are how we send data to a server.
 ```  
 ![image](https://github.com/Keeriiim/WebDev/assets/117115289/9f4cf3ef-4919-4ea1-b1b1-acf0f30f624e)
 
-## Select
-Used to create a drop-down list within a form. It allows users to choose one or more options from a list of predefined options. The <select> element is commonly used for selecting options like country, state, or other categories where a predefined list is appropriate.
-Example 1: Preselected
+## Select  
+Used to create a drop-down list within a form. It allows users to choose one or more options from a list of predefined options. The <select> element is commonly used for selecting options like country, state, or other categories where a predefined list is appropriate.  
+Example 1: Preselected  
 ```bash
 <form action="/submit-form" method="post">
   <label for="car">Choose a car:</label>
@@ -371,7 +371,7 @@ Example 1: Preselected
 </form>
 
 ```
-![image](https://github.com/Keeriiim/WebDev/assets/117115289/eff8c202-e83f-412c-99c6-9ca1bc72041a)  
+![image](https://github.com/Keeriiim/WebDev/assets/117115289/eff8c202-e83f-412c-99c6-9ca1bc72041a)   
 
 Example 2: Multiple size
 Atm the dropdown will show 3 options without even getting clicked.
